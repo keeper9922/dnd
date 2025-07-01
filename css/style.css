@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  background-color: #0c0917;
+  color: #eae5eb;
+  font-family: "Noto Sans", sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1b172d;
+}
+*::-webkit-scrollbar-thumb {
+    background: #161a3a;
+    border-radius: 5px;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background: #161a3a;
+}
+
+a:visited{text-decoration: none;}
+
+header{
+  padding: 25px;
+  background-color: #140e29;
+  list-style-type: none;
+}
+header a{
+  padding: 10px;
+  margin: 5px;
+  color: inherit;
+  background-color: #22214b;
+  border-radius: 15px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+header a:hover{
+  background-color: #323177;
+  /* color: #18182a; */
+}
+
+header li{
+  display: inline;
+}
+
+main header{
+  padding: 15px;
+}
+main header a{
+  margin: 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#chosen{
+  background-color: #201f37;
+}
+
+#chosen:hover{
+  cursor: default;
+}
+
+p{
+  margin: 6px;
+  font-size: 14px;
+  font-style: normal;
+}
+
+br{
+  margin: 5px;
+}
+
+p::first-letter{
+  font-size: 1.2em
+}
+
+b{
+  color: white;
+}
+
+li{
+  font-size: 0.9em;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+li a{
+  color: #7f77bd;
+}
+
+li a:hover{
+  color: #6c78be;
+}
+.card{
+  width: 40%;
+  max-width: 90%;
+  max-height: 40%;
+  overflow-x: hidden;
+  overflow-y: scroll hidden;
+  background-color: rgba(23, 15, 52, 0.5);
+  border-radius: 15px;
+  border: #1b0f46, solid, 1px;
+  margin: 10px;
+}
+.card table{
+  border: #22214b solid;
+  border-radius: 15px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Перенос на новую строку */
+  gap: 10px; /* Отступ между элементами */
+}
+.item {
+  /* flex: 1 0 auto; /* Элементы растягиваются, но не сжимаются ниже своего размера */ */
+  /* или */
+  flex: 0 0 30%; /* Фиксированная ширина (200px), но перенос при нехватке места */
+}
+.wider{
+  width: 85%;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.subtitle{
+  color: white;
+  font-size: 0.9em;
+  font-style: italic;
+}
