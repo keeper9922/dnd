@@ -3,6 +3,7 @@
 *{
   /*margin: 0;*/
   /*padding: 0;*/
+  --panel_background: rgba(23, 15, 52, 0.5);
 }
 
 body{
@@ -51,11 +52,13 @@ header li{
 }
 
 main header{
-  padding: 15px;
+  padding: 10px;
+  background-color: rgba(120, 120, 216, 0.1);
 }
 main header a{
-  margin: 5px 5px 20px;
   border-radius: 5px;
+  font-size: 1.1em;
+  display: inline-block;
 }
 
 #chosen{
@@ -103,14 +106,16 @@ li a:hover{
 }
 .card{
   width: 40%;
-  max-width: 90%;
+  max-width: 95%;
   max-height: 40%;
   overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: rgba(23, 15, 52, 0.5);
+  overflow-y: clip;
+  background-color: var(--panel_background);
   border-radius: 15px;
   border: #1b0f46 solid 1px;
+  border-bottom: 0;
   margin: 10px;
+  padding: 10px;
 }
 .card table{
   border: #22214b solid;
@@ -128,6 +133,9 @@ li a:hover{
 }
 .wider{
   width: 85%;
+  border: #695d47 solid 2px;
+  border-radius: 10px;
+  border-bottom: 0;
 }
 .center{
   margin-left: auto;
