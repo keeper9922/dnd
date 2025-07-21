@@ -4,7 +4,7 @@
   /*margin: 0;*/
   /*padding: 0;*/
   --panel_background: rgba(24, 13, 52, 0.5);
-  --highlight_background: rgba(44, 32, 89, 0.5);
+  --highlight_background: rgba(60, 44, 124, 0.5);
   --highlight_border: rgb(255, 204, 0);
   --text_color: #eae5eb;
   --link_color: #dcd9e5;
@@ -160,9 +160,11 @@ li a:hover{
 .item a{
   background: rgba(11,25,84,0.85);
   color: var(--link_color);
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-decoration: none;
-  padding: 5px;
+  margin: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
   border-radius: 5px;
 }
 .item a:hover{
@@ -170,11 +172,17 @@ li a:hover{
 }
 .item:target{
   background-color: var(--highlight_background);
-  border-color: var(--highlight_border);
-  border-width: 3px;
+  border-width: 4px;
   border-style: dashed;
-  border-bottom: 0;
-  border-top: 0;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: var(--highlight_border);
+}
+table:target{
+  background-color: var(--highlight_background);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--highlight_border);
 }
 .wider{
   width: 85%;
