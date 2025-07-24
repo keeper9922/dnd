@@ -154,8 +154,13 @@ li a:hover{
 }
 .item .item{
   border-top: 0;
+}
+.item .item:not(:last-of-type){
   /*margin-top: 10px;*/
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.item .item:not(:first-of-type){
+  margin-top: 10px;
 }
 .item a{
   background: rgba(11,25,84,0.85);
