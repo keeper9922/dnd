@@ -43,6 +43,17 @@ header{
   padding: 25px;
   background-color: #140e29;
   list-style-type: none;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 header a{
   padding: 10px;
@@ -56,6 +67,68 @@ header a{
 header a:hover{
   background-color: #323177;
   /* color: #18182a; */
+}
+header ul li a{
+  padding: 10px;
+  margin: 5px;
+  color: inherit;
+  background-color: #22214b;
+  border-radius: 15px;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+header ul li a:hover{
+  background-color: #323177;
+  /* color: #18182a; */
+}
+
+header a.active {
+  background-color: #201f37;
+  color: #a2a7ad;
+  font-weight: bold;
+}
+header a.active:hover {
+  cursor: default;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 2px 0;
+  transition: all 0.3s ease;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  header {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  header.active {
+    display: flex;
+  }
+
+  header ul li {
+    margin: 0.5rem 0;
+  }
 }
 
 header li{
