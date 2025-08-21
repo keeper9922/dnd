@@ -16,7 +16,7 @@ html{
 body{
   margin: 0;
   padding: 0;
-  background-image: url("/background/cave3.jpg");
+  background-image: url("/cave2.jpg");
   background-color: rgba(12, 9, 23, 0.9);
   background-size: cover;
   background-repeat: repeat-y;
@@ -284,4 +284,10 @@ table:target{
   color: white;
   font-size: 0.9em;
   font-style: italic;
+}
+
+.artifact-card img{
+  float: right;
+  width: 256px;
+  height: 256px;
 }
