@@ -3,16 +3,18 @@ function createNavbar() {
     // HTML структура навигационной панели
     const navbarHTML = `
     <header>
-    <div class="navbar-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+<!--    <div class="navbar-toggle" onclick="toggleMenu()">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--    </div>-->
     <ul class="navbar-menu">
         <li><a href="index.html" class="nav-link">Главная</a></li>
-        <li><a href="char_history.html" class="nav-link">Предыстории</a></li>
-        <li><a href="magic.html" class="nav-link">Магия и божества</a></li>
         <li><a href="lore.html" class="nav-link">Лор</a></li>
+        <li><a href="char_history.html" class="nav-link">Предыстории</a></li>
+<!--        <li><a href="char_history.html" class="nav-link">Термины</a></li>-->
+        <li><a href="magic.html" class="nav-link">Магия</a></li>
+        <li><a href="gods.html" class="nav-link">Божества</a></li>
     </ul>
     </header>
     `;
