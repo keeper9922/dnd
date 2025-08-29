@@ -13,11 +13,11 @@ function createNavbar() {
         <li><a href="char_history.html" class="nav-link">Предыстории</a></li>
         <li><a href="magic.html" class="nav-link">Магия и божества</a></li>
         <li><a href="lore.html" class="nav-link">Лор</a></li>
-<li><a href="items.html" class="nav-link">Предметы</a></li>
-<li><a href="monsters.html" class="nav-link">Монстры</a></li>
-<li><a href="map.html" class="nav-link">Интерактивная карта</a></li>
-<li><a href="profile.html" class="nav-link">Профиль</a></li>
-<li><a href="session.html" class="nav-link">Сессии</a></li>
+<!--<li><a href="items.html" class="nav-link">Предметы</a></li>-->
+<!--<li><a href="monsters.html" class="nav-link">Монстры</a></li>-->
+<!--<li><a href="map.html" class="nav-link">Интерактивная карта</a></li>-->
+<!--<li><a href="profile.html" class="nav-link">Профиль</a></li>-->
+<!--<li><a href="session.html" class="nav-link">Сессии</a></li>-->
     </ul>
     </header>
     `;
