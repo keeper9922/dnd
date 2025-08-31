@@ -2,12 +2,8 @@
 function createNavbar() {
     // HTML структура навигационной панели
     const navbarHTML = `
+    <a class="header-button">=</a>
     <header>
-<!--    <div class="navbar-toggle" onclick="toggleMenu()">-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--    </div>-->
     <ul class="navbar-menu">
         <li><a href="index.html" class="nav-link">Главная</a></li>
         <li><a href="lore.html" class="nav-link">Лор</a></li>
@@ -26,9 +22,17 @@ function createNavbar() {
 }
 
 // Функция для переключения мобильного меню
+let turned_on = false;
 function toggleMenu() {
-    const menu = document.querySelector('.navbar-menu');
-    menu.classList.toggle('active');
+    console.log(turned_on);
+    const header = document.querySelector('header');
+    if(!turned_on){
+        $(header).fadeIn();
+        turned_on = true;
+    }else{
+        $(header).fadeOut();
+        turned_on = false;
+    }
 }
 
 // Функция для выделения активного пункта меню
@@ -46,3 +50,6 @@ function setActiveLink() {
 
 // Выполняем создание навигационной панели при загрузке страницы
 document.addEventListener('DOMContentLoaded', createNavbar);
+jQuery(function ($) {
+    $(".header-button").on("click", toggleMenu);
+});

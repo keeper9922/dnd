@@ -53,6 +53,8 @@ header{
   z-index: 1000;
 }
 
+.header-button{ display: none; }
+
 header ul {
   display: flex;
   list-style: none;
@@ -107,45 +109,6 @@ header a.active:hover {
   background-color: white;
   margin: 2px 0;
   transition: all 0.3s ease;
-}
-
-/* Адаптивный дизайн для мобильных устройств */
-@media screen and (max-width: 768px) {
-  /*.navbar-toggle {*/
-  /*  display: flex;*/
-  /*}*/
-  main header{
-    display: none;
-  }
-  header {
-    /*display: none;*/
-    position: fixed;
-    background-color: #140e29;
-    font-size: 0.7rem;
-    padding-bottom: 15px;
-    overflow: auto;
-    /*flex-direction: column;*/
-    /*padding: 1rem 0 1rem 0;*/
-  }
-  header ul {
-    margin: -5px 0 0;
-  }
-  header ul li a{
-    margin: 4px;
-    border-radius: 10px;
-  }
-
-  .container {
-    padding-top: 50px;
-  }
-
-  /*header.active {*/
-  /*  display: flex;*/
-  /*}*/
-
-  /*header ul li {*/
-  /*  margin: 0.5rem 0;*/
-  /*}*/
 }
 
 /*header li{*/
@@ -430,14 +393,53 @@ table:target{
   .carousel-item {
     grid-template-columns: repeat(2, 1fr);
   }
+  main header{
+    display: none;
+  }
+  header {
+    display: none;
+    position: fixed;
+    background-color: #140e29;
+    font-size: 0.7rem;
+    padding-bottom: 15px;
+    overflow: auto;
+    /*flex-direction: column;*/
+    /*padding: 1rem 0 1rem 0;*/
+  }
+  .header-button{
+    position: fixed;
+    justify-self: flex-end;
+    margin-right: 15px;
+    display: block;
+    font-size: 2rem;
+    z-index: 1001;
+    cursor: pointer;
+    /*border: 5px solid white;*/
+  }
+  header ul {
+    margin: -5px 0 0;
+  }
+  header ul li a{
+    margin: 4px;
+    border-radius: 10px;
+  }
+  .container {
+    width: 95%;
+    border: 0;
+  }
+  .card{
+    margin-left: 0;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 480px) {
   /* отключение карусели */
   .carousel {
-    margin-top: 10%;
-    overflow: hidden;
+    overflow: auto;
+    overflow-x: hidden;
     display: block;
+    height: 100vh;
   }
 
   .viewport, .track {
@@ -458,20 +460,27 @@ table:target{
   }
 
   .carousel-item .card {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     width: 100%;
     max-width: 100%;
   }
   .carousel-item .card img{
+    filter: brightness(0.9) blur(1px);
+  }
+  .carousel-item .card:hover img{
     filter: brightness(1) blur(0px);
+  }
+  .card-content{
+    background-color: rgba(0,0,0,0.3);;
   }
   .card-content h1{
     font-size: 1rem;
   }
   .card-content p{
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   .carousel-title{
+    position: sticky !important;
     margin-top: 0;
     font-size: 1rem;
   }
@@ -517,4 +526,31 @@ table:target{
   color: var(--text_color);
   font-weight: bold;
   font-size: 1.6rem;
+}
+
+@media (max-width: 1024px) {
+  .popup {
+    width: 80%;
+  }
+  .popup-close {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .popup {
+    width: 90%;
+  }
+  .popup-close {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup {
+    width: 90%;
+  }
+  .popup-close {
+    font-size: 2rem;
+  }
 }
