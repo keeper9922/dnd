@@ -10,7 +10,7 @@ function createNavbar() {
         <li><a href="char_history.html" class="nav-link">Предыстории</a></li>
         <li><a href="magic.html" class="nav-link">Магия</a></li>
         <li><a href="gods.html" class="nav-link">Божества</a></li>
-        <li><a href="items.html" class="nav-link">Предметы</a></li>
+<!--        <li><a href="items.html" class="nav-link">Предметы</a></li>-->
     </ul>
     </header>
     `;
