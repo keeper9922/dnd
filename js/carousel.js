@@ -19,36 +19,36 @@ jQuery(function ($) {
         items[i].style.gridTemplateColumns = `repeat(${cards.length-1}, 1fr)`;
         for (let j = 0; j < cards.length; j++) {
             let card = cards[j];
-            let content = $(card).find(".card-full-content")
-            $(card).on("click", function () {
-                // console.log(content)
-                $(content).appendTo(popup);
-                $(content).css("display", "block");
-                // $(popupParent).fadeIn();
-                $(popupParent).css("display", "block");
-            });
-            $(document).on("keydown", function(e) {
-                if (e.key === "Escape") {
-                    e.stopPropagation();
+            if(card.className === "card"){
+                let content = $(card).find(".card-full-content")
+                $(card).on("click", function () {
+                    $(content).appendTo(popup);
+                    $(content).css("display", "block");
+                    // $(popupParent).fadeIn();
+                    $(popupParent).css("display", "block");
+                });
+                $(document).on("keydown", function(e) {
+                    if (e.key === "Escape") {
+                        e.stopPropagation();
+                        $(popupParent).css("display", "none");
+                        $(content).appendTo(card);
+                        $(content).css("display", "none");
+                        // $('.popup-fade').fadeOut();
+                    }
+                });
+                $(popupClose).on("click", function () {
                     $(popupParent).css("display", "none");
                     $(content).appendTo(card);
                     $(content).css("display", "none");
-                    // $('.popup-fade').fadeOut();
-                }
-            });
-            $(popupClose).on("click", function () {
-                $(popupParent).css("display", "none");
-                $(content).appendTo(card);
-                $(content).css("display", "none");
-            })
-            $(popupParent).on("click", function (e) {
-                if ($(e.target).closest(popup).length === 0) {
-                    $(this).css("display", "none");
-                    $(content).appendTo(card);
-                    $(content).css("display", "none");
-                }
-
-            })
+                })
+                $(popupParent).on("click", function (e) {
+                    if ($(e.target).closest(popup).length === 0) {
+                        $(this).css("display", "none");
+                        $(content).appendTo(card);
+                        $(content).css("display", "none");
+                    }
+                })
+            }
         }
     }
 });
