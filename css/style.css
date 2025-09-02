@@ -382,6 +382,10 @@ table:target{
 .card-content p{
   font-size: 1.4rem;
 }
+.carousel-item .card:target img{
+  filter: brightness(1) blur(0px);
+  transition: filter 0.4s ease;
+}
 /* адаптация */
 @media (max-width: 1024px) {
   .carousel-item {
