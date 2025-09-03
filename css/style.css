@@ -1,5 +1,6 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
   /*margin: 0;*/
   /*padding: 0;*/
@@ -10,6 +11,105 @@
   --text_color: #eae5eb;
   --link_color: #dcd9e5;
 }
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AlegreyaSansSC';
+  src: url('fonts/AlegreyaSansSC/AlegreyaSansSC-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
 
 html, body{
   scroll-behavior: smooth;
@@ -177,6 +277,35 @@ li a{
 
 li a:hover{
   color: #6c78be;
+}
+
+th{
+  font-family: "Alegreya Sans SC", "Times New Roman", serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: normal;
+  font-size: 1.6em;
+  /*font-size: 1.6em;*/
+  padding: 10px 15px;
+}
+table{
+  font-family: "Open Sans", sans-serif;
+}
+td:not(:last-of-type){
+  padding-bottom: 5px;
+}
+td{
+  padding-left: 5px;
+  font-size: 1.15em;
+}
+tr:nth-child(odd){
+  background: rgba(49, 42, 77, 0.3);
+}
+tr:nth-child(even){
+  background: rgba(67, 64, 100, 0.3);
+}
+.table-category-header{
+  font-style: italic;
+  font-size: 1.3em;
 }
 .card{
   width: 40%;
