@@ -306,6 +306,7 @@ tr:nth-child(even){
 .table-category-header{
   font-style: italic;
   font-size: 1.3em;
+  color: white;
 }
 .card{
   width: 40%;
