@@ -120,7 +120,7 @@ html, body{
 body{
   margin: 0;
   padding: 0;
-  background-image: url(../background/cave1.jpg);
+  background-image: url(../background/eternity.jpg);
   background-color: rgba(12, 9, 23, 0.9);
   background-size: cover;
   background-repeat: repeat-y;
@@ -144,7 +144,7 @@ body{
 a:visited{text-decoration: none;}
 
 header{
-  padding: 25px 0 25px 0;
+  padding: 15px 0 15px 0;
   background-color: #140e29;
   list-style-type: none;
   align-items: center;
@@ -169,6 +169,8 @@ header a{
   border-radius: 15px;
   font-size: 1.3em;
   text-decoration: none;
+  display: inline-block;
+  word-break: keep-all;
 }
 header a:hover{
   background-color: #323177;
@@ -662,11 +664,23 @@ table:target{
   font-size: 1.6rem;
 }
 
+.pc-hidden{
+  display: none;
+}
+.pc-hidden:target{
+  display: block;
+}
 @media (max-width: 1024px) {
+  .popup-fade{
+
+  }
   .popup {
     width: 80%;
+    overflow-y: scroll;
+    position: absolute;
   }
   .popup-close {
+    position: fixed;
     font-size: 2rem;
   }
   .carousel-title{
@@ -701,6 +715,9 @@ table:target{
   }
   .carousel-item {
     gap: 5px
+  }
+  .pc-hidden{
+    display: block;
   }
 }
 
