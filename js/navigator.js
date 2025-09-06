@@ -2,18 +2,17 @@
 function createNavbar() {
     // HTML структура навигационной панели
     const navbarHTML = `
+    <a class="header-button">=</a>
     <header>
-<!--    <div class="navbar-toggle" onclick="toggleMenu()">-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--    </div>-->
     <ul class="navbar-menu">
         <li><a href="index.html" class="nav-link">Главная</a></li>
-        <li><a href="lore.html" class="nav-link">Лор</a></li>
+        <li><a href="races.html" class="nav-link">Расы</a></li>
         <li><a href="char_history.html" class="nav-link">Предыстории</a></li>
+        <li><a href="lore.html" class="nav-link">Лор</a></li>
         <li><a href="magic.html" class="nav-link">Магия</a></li>
         <li><a href="gods.html" class="nav-link">Божества</a></li>
+        <li><a href="equipment.html" class="nav-link">Снаряжение и предметы</a></li>
+<!--        <li><a href="items.html" class="nav-link">Предметы</a></li>-->
     </ul>
     </header>
     `;
@@ -26,9 +25,17 @@ function createNavbar() {
 }
 
 // Функция для переключения мобильного меню
+let turned_on = false;
 function toggleMenu() {
-    const menu = document.querySelector('.navbar-menu');
-    menu.classList.toggle('active');
+    console.log(turned_on);
+    const header = document.querySelector('header');
+    if(!turned_on){
+        $(header).fadeIn();
+        turned_on = true;
+    }else{
+        $(header).fadeOut();
+        turned_on = false;
+    }
 }
 
 // Функция для выделения активного пункта меню
@@ -46,3 +53,6 @@ function setActiveLink() {
 
 // Выполняем создание навигационной панели при загрузке страницы
 document.addEventListener('DOMContentLoaded', createNavbar);
+jQuery(function ($) {
+    $(".header-button").on("click", toggleMenu);
+});
