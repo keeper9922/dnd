@@ -289,6 +289,39 @@ th{
   /*font-size: 1.6em;*/
   padding: 10px 15px;
 }
+/*.table-wrapper {*/
+/*  width: 100%;*/
+/*  overflow-x: auto;*/
+/*}*/
+
+/*.table-wrapper table {*/
+/*  width: 100%;*/
+/*  border-collapse: collapse;*/
+/*}*/
+@media (max-width: 600px) {
+  table {
+    border-collapse: separate;
+    font-size: 0.3rem;
+  }
+  table th, table td {
+    padding: 0.25rem;
+  }
+}
+@media (max-width: 768px) {
+  table {
+    border-collapse: separate;
+    /*border-spacing: 1;*/
+    font-size: 0.4rem;
+  }
+  table th, table td {
+    padding: 0.3rem;
+  }
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+}
 table{
   font-family: "Open Sans", sans-serif;
 }
