@@ -673,7 +673,9 @@ table:target{
   z-index: 9999;
 }
 .popup {
-  position: fixed;
+  /*position: fixed;*/
+  overflow-y: scroll;
+  position: absolute;
   align-self: center;
   justify-self: center;
   top: 10%;
@@ -709,8 +711,6 @@ table:target{
   }
   .popup {
     width: 80%;
-    overflow-y: scroll;
-    position: absolute;
   }
   .popup-close {
     position: fixed;
