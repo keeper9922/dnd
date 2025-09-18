@@ -143,6 +143,14 @@ body{
 
 a:visited{text-decoration: none;}
 
+p:target{
+  background-color: rgba(115, 75, 182, 0.23);
+}
+li:target{
+  background-color: rgba(115, 75, 182, 0.23);
+  padding: 10px;
+}
+
 header{
   padding: 15px 0 15px 0;
   background-color: #140e29;

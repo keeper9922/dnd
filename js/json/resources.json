@@ -1,0 +1,23 @@
+{
+  "metals":
+          [
+            {"name": "Латунь", "weight_lb":  1, "price": 3},
+            {"name": "Бронза", "weight_lb":  1, "price": 4},
+            {"name": "Железо", "weight_lb":  1, "price": 1},
+            {"name": "Медь", "weight_lb":  1, "price": 7},
+            {"name": "Электрум", "weight_lb":  1, "price": 68},
+            {"name": "Золото", "weight_lb":  1, "price": 147},
+            {"name": "Серебро", "weight_lb":  1, "price": 18},
+            {"name": "Свинец", "weight_lb":  1, "price": 2},
+            {"name": "Платина", "weight_lb":  1, "price": 300},
+            {"name": "Сталь", "weight_lb":  1, "price": 3},
+            {"name": "Олово", "weight_lb":  1, "price": 3},
+            {"name": "Мифрил", "weight_lb":  1, "price": 350},
+            {"name": "Чистый мифрил", "weight_lb":  1, "price": 3500},
+            {"name": "Адамант", "weight_lb":  1, "price": 600},
+            {"name": "Чистый адамант", "weight_lb":  1, "price": 7000},
+            {"name": "Усиленный адамантитовый сплав", "weight_lb":  1, "price": 12500},
+            {"name": "Ослабленный адамантитовый сплав", "weight_lb":  1, "price": 250},
+            {"name": "Адамантитовый сплав", "weight_lb":  1, "price": 720}
+          ]
+}

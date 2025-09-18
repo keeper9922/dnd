@@ -1,0 +1,33 @@
+{
+  "firearms":
+  [
+    {}
+  ],
+  "weapons":
+  [
+    {
+      "name": "",
+      "type": "",
+      "typeTag": "",
+      "rarity": "",
+      "price":  0,
+      "align":  false,
+      "cursed_align": false,
+      "align_condition": "",
+      "description": "",
+      "curse":  ""
+    },
+    {
+      "name": "Меч глупца",
+      "type": "Оружие",
+      "typeTag": ["Shortsword", "Longsword"],
+      "rarity": "common",
+      "price":  200,
+      "align":  false,
+      "cursed_align": false,
+      "align_condition": "",
+      "description": "Меч глупца!!! ыыыыыы ыгыгыгыггыы.",
+      "curse":  "Вы глупы."
+    }
+  ]
+}
