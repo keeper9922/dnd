@@ -14,10 +14,13 @@
 <main>
     <header>
         <a href="#firearm">Огнестрел</a>
-        <a href="#instruments">Инструментами</a>
+        <a href="#instruments">Инструменты</a>
         <a href="#gunsmith">Инструменты оружейника</a>
         <a href="#craft">Создание</a>
         <a href="#other">Материалы</a>
+        <a href="#metals">Металлы</a>
+        <a href="#potions">Зелья</a>
+        <a href="#potions">Зелья лечения</a>
     </header>
     <div class="container center">
         <div id="firearm" class="card item center">
@@ -486,7 +489,8 @@
             <h1>Материалы</h1>
             <h3>1 кг = 2.2 фунта</h3>
             <h3>1 фунт = 0.45 кг</h3>
-            <table>
+            <h2>Металлы</h2>
+            <table id="metals">
                 <thead>
                 <tr>
                     <th>
@@ -501,176 +505,35 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>
-                        Пластина из метеоритного железа
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        30 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Пластина из адского металла
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        30 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Слабый адамантитовый сплав
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        40 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Усиленный адамантиновый сплав
-                    </td>
-                    <td>
-                        0.5 кг
-                    </td>
-                    <td>
-                        5000 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Латунь
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        5 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Бронза
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        7 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Железо
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        2 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Медь
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        14
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Электрум
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        150 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Золото
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        325 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Серебро
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        40 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Свинец
-                    </td>
-                    <td>
-                        1 кг
-                    </td>
-                    <td>
-                        4 зм
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Медь
-                    </td>
-                    <td>
 
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Медь
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Медь
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
                 </tbody>
             </table>
             <p>
                 <b>Адамантитовый сплав.</b> Адамантин черного цвета, но при свете свечей имеет прозрачный зеленый блеск - блеск, который усиливается до пурпурно-белого при свете, излучаемом большинством магических излучателей и волшебными палочками.
             </p>
+            <h1 id="potions">Зелья</h1>
+            <h2>Зелья лечения</h2>
+            <table id="health_potions">
+                <thead>
+                <tr>
+                    <th>
+                        Зелье
+                    </th>
+                    <th>
+                        Редкость
+                    </th>
+                    <th>
+                        Стоимость
+                    </th>
+                    <th>
+                        Хиты
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -692,5 +555,6 @@
 </main>
 <footer></footer>
 <script src="js/navigator.js"></script>
+<script src="js/resources.js"></script>
 </body>
 </html>
