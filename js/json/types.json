@@ -1,0 +1,54 @@
+{
+  "rarity_types":
+  [
+    {"common": "Обычное", "color": [98, 98, 98]},
+    {"uncommon": "Необычное", "color": [62, 92, 59]},
+    {"rare": "Редкое", "color": [59, 84, 92]},
+    {"very_rare": "Очень редкое", "color": [76, 59, 92]},
+    {"legendary": "Легендарное", "color": [92, 80, 59]},
+    {"artifact": "Артефакт", "color": [99, 46, 46]},
+    {"lore": "Древнее", "color": [116, 40, 99]},
+    {"vary": "Варируется", "color": [116, 40, 99]}
+  ],
+  "weapon_type_names": {
+    "Club": "Дубинка",
+    "Dagger": "Кинжал",
+    "Greatclub": "Большая дубинка",
+    "Handaxe": "Ручной топор",
+    "Javelin": "Метательное копьё",
+    "LightHammer": "Молоток",
+    "Mace": "Булава",
+    "Quarterstaff": "Посох",
+    "Sickle": "Серп",
+    "Spear": "Копьё",
+    "LightCrossbow": "Лёгкий арбалет",
+    "Shortbow": "Короткий лук",
+    "Sling": "Праща",
+    "Battleaxe": "Боевой топор",
+    "Flail": "Цеп",
+    "Glaive": "Глефа",
+    "Greataxe": "Большой топор",
+    "Greatsword": "Двуручный меч",
+    "Halberd": "Алебарда",
+    "Lance": "Копьё рыцарское",
+    "Longsword": "Длинный меч",
+    "Maul": "Кувалда",
+    "Morningstar": "Моргенштерн",
+    "Pike": "Пика",
+    "Rapier": "Рапира",
+    "Scimitar": "Скимитар",
+    "Shortsword": "Короткий меч",
+    "Trident": "Трезубец",
+    "Warhammer": "Боевой молот",
+    "WarPick": "Боевой кирка",
+    "Whip": "Кнут",
+    "Blowgun": "Духовая трубка",
+    "HandCrossbow": "Ручной арбалет",
+    "HeavyCrossbow": "Тяжёлый арбалет",
+    "Longbow": "Длинный лук",
+
+    "Musket": "Мушкет",
+    "Pistol": "Пистолет"
+  }
+
+}
