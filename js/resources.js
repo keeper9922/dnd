@@ -23,4 +23,5 @@ jQuery(function ($) {
             healthPotionTable.append(row);
         }
     });
+
 });
