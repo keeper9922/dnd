@@ -1,0 +1,72 @@
+{
+  "cultist": {
+    "name": "",
+    "short_description": "",
+    "skills": ["", ""],
+    "languages": ["", ""],
+    "equipment": ["", ""],
+    "origin_trait": "",
+    "description_paragraphs": ["", "", ""],
+    "enable_additional_traits": true,
+    "additional_traits_name": "",
+    "additional_traits_description": "",
+    "additional_traits_table": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "abilities": [
+      {
+        "name":  "",
+        "description": ""
+      }
+    ],
+    "enable_personalisation": true,
+    "personalisation_description": "",
+    "persona_trait_table": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "persona_ideal_table": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "persona_tie_table": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "persona_weakness_table": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+}

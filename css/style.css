@@ -143,6 +143,14 @@ body{
 
 a:visited{text-decoration: none;}
 
+p:target{
+  background-color: rgba(115, 75, 182, 0.23);
+}
+li:target{
+  background-color: rgba(115, 75, 182, 0.23);
+  padding: 10px;
+}
+
 header{
   padding: 15px 0 15px 0;
   background-color: #140e29;
@@ -243,8 +251,15 @@ main header h1{
 
 p{
   margin: 6px;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
+}
+
+.big{
+  font-size: 23px;
+}
+.big b{
+  font-size: 25px;
 }
 
 p b{
@@ -551,6 +566,10 @@ table:target{
   filter: brightness(1) blur(0px);
   transition: filter 0.4s ease;
 }
+.inline-block{
+  display: inline-block;
+  vertical-align: top;
+}
 /* адаптация */
 @media (max-width: 1024px) {
   .carousel-item {
@@ -626,6 +645,9 @@ table:target{
 
   .carousel button {
     display: none;
+  }
+  .inline-block{
+    display: block;
   }
 
   .carousel-item .card {
