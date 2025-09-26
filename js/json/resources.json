@@ -21,9 +21,9 @@
             {"name": "Адамантитовый сплав", "weight_lb":  1, "price": 720}
           ],
   "health_potions": [
-    {"name": "Зелье лечения", "rarity":  "common", "price": 90, "heal_amount": "2к4+2"},
-    {"name": "Большое зелье лечения", "rarity":  "uncommon", "price": 310, "heal_amount": "4к4+4"},
-    {"name": "Огромное зелье лечения", "rarity":  "rare", "price": 3400, "heal_amount": "8к4+8"},
-    {"name": "Превосходное зелье лечения", "rarity":  "very_rare", "price": 31000, "heal_amount": "10к4+20"}
+    {"name": "Зелье лечения", "rarity":  "Обычное", "price": 90, "heal_amount": "2к4+2"},
+    {"name": "Большое зелье лечения", "rarity":  "Необычное", "price": 310, "heal_amount": "4к4+4"},
+    {"name": "Огромное зелье лечения", "rarity":  "Редкое", "price": 3400, "heal_amount": "8к4+8"},
+    {"name": "Превосходное зелье лечения", "rarity":  "Очень редкое", "price": 31000, "heal_amount": "10к4+20"}
   ]
 }

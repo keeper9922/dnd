@@ -559,6 +559,10 @@ table:target{
   filter: brightness(1) blur(0px);
   transition: filter 0.4s ease;
 }
+.inline-block{
+  display: inline-block;
+  vertical-align: top;
+}
 /* адаптация */
 @media (max-width: 1024px) {
   .carousel-item {
@@ -634,6 +638,9 @@ table:target{
 
   .carousel button {
     display: none;
+  }
+  .inline-block{
+    display: block;
   }
 
   .carousel-item .card {
