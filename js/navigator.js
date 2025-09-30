@@ -12,6 +12,7 @@ function createNavbar() {
         <li><a href="magic.html" class="nav-link">Магия</a></li>
         <li><a href="gods.html" class="nav-link">Божества</a></li>
         <li><a href="equipment.html" class="nav-link">Снаряжение, предметы, владения</a></li>
+        <li><a href="sphere.html" class="nav-link superior">🔮</a></li>
 <!--        <li><a href="items.html" class="nav-link">Предметы</a></li>-->
     </ul>
     </header>
