@@ -13,21 +13,23 @@
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <main>
     <header>
-        <a href="#1">Таблица 1</a>
-        <a href="#2">Таблица 2</a>
+<!--        <a href="#1">Таблица 1</a>-->
+<!--        <a href="#2">Таблица 2</a>-->
     </header>
     <div class="container center">
         <div class="card item center">
             <p class="big">При использовании способности сферы вы гарантированно получаете одно из ослаблений, соответствующее выбранной редкости (столбец <b>Цена</b>). Если в таблице несколько вариантов, то
             случайным образом выбирается одна из.</p>
             <div class="table-wrapper">
-                <table id="1" class="center">
-                    <caption>Таблица провалов 1</caption>
+                <table id="craft" class="center">
+                    <caption>Таблица 1</caption>
                     <thead>
                         <tr>
                             <th>Редкость</th>
-                            <th>Цена</th>
-                            <th>Цена провала</th>
+                            <th>Результат</th>
+                            <th>Ресурс</th>
+                            <th>Проверка</th>
+                            <th>Сл</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -36,8 +38,25 @@
             </div>
             <br>
             <div class="table-wrapper">
-                <table id="2" class="center">
-                    <caption>Таблица провалов 2</caption>
+                <table id="resources" class="center">
+                    <caption>Таблица 2</caption>
+                    <thead>
+                    <tr>
+                        <th>Редкость</th>
+                        <th>Результат</th>
+                        <th>Ресурс</th>
+                        <th>Проверка</th>
+                        <th>Сл</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="table-wrapper">
+                <table id="fails" class="center">
+                    <caption>Таблица провалов</caption>
                     <thead>
                         <tr>
                             <th>Редкость</th>
@@ -55,6 +74,6 @@
 </main>
 <footer></footer>
 <script src="js/navigator.js"></script>
-<script src="js/sphere_debuffs.js"></script>
+<script src="js/sphere.js"></script>
 </body>
 </html>

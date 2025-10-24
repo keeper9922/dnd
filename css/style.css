@@ -595,6 +595,15 @@ table:target{
   display: inline-block;
   vertical-align: top;
 }
+.superior{
+  background-color: #4b2121;
+}
+.superior.active{
+  background-color: #371f1f;
+}
+.superior:hover{
+  background-color: #773131;
+}
 /* адаптация */
 @media (max-width: 1024px) {
   .carousel-item {

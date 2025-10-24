@@ -1,4 +1,5 @@
 let metalTable = $("#metals")
+let metalDescriptionsTable = $("#metals_descriptions")
 let healthPotionTable = $("#health_potions")
 let data = {}
 jQuery(function ($) {
@@ -11,6 +12,11 @@ jQuery(function ($) {
                 "<td>" + item.price + " зм </td>" +
                 "</tr>";
             metalTable.append(row);
+        }
+        for (const jsonDataKey in jsonData["metals_descriptions"]) {
+            let item = jsonData["metals_descriptions"][jsonDataKey];
+            let row = "<p><b>" + item.name + ".</b> " + item.text + "</p>"
+            metalDescriptionsTable.append(row);
         }
         for (const jsonDataKey in jsonData["health_potions"]) {
             let item = jsonData["health_potions"][jsonDataKey];
