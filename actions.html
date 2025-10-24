@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="svoe95">
+    <meta name="keywords" content="dnd,fantasy,dark,game,roleplay,tabletop">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/action.css">
+    <title>Действия</title>
+  </head>
+  <body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+    <main>
+      <div id="panel">
+        <label for="idSelect">Выбрать ID:</label>
+        <select id="idSelect"></select>
+        <button id="addIdBtn">Добавить ID</button>
+        <button id="uploadFileBtn">Загрузить из файла</button>
+        <input type="file" id="fileInput" accept=".json" style="display:none;">
+        <button id="resetTabs">Ход завершён</button>
+      </div>
+
+<!--      <div id="tabs">-->
+<!--       -->
+<!--      </div>-->
+      <div class="container center">
+        <div class="card item center">
+          <div class="tab-buttons">
+            <div class="tab-button" data-tab="actions">Действия</div>
+            <div class="tab-button" data-tab="bonus_actions">Бонусные действия</div>
+            <div class="tab-button" data-tab="reactions">Реакции</div>
+            <div class="tab-button" data-tab="spare_actions">Особые действия</div>
+          </div>
+          <a href="https://next.dnd.su/glossary/action" target="_blank">Справка по действиям</a>
+          <p>Особые действия не занимают никаких действий. Например, вы имеете способность, которая активируется при броске Инициативы, или просто по желанию.</p>
+          <p></p>
+          <div id="actions" class="tab-content"></div>
+          <div id="bonus_actions" class="tab-content"></div>
+          <div id="reactions" class="tab-content"></div>
+          <div id="spare_actions" class="tab-content"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  <script src="js/navigator.js"></script>
+  <script src="js/actions.js"></script>
+  </body>
+</html>
