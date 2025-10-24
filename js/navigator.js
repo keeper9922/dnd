@@ -6,12 +6,14 @@ function createNavbar() {
     <header>
     <ul class="navbar-menu">
         <li><a href="index.html" class="nav-link">Главная</a></li>
+        <li><a href="intro.html" class="nav-link">Введение</a></li>
         <li><a href="races.html" class="nav-link">Расы</a></li>
         <li><a href="char_history.html" class="nav-link">Предыстории</a></li>
         <li><a href="lore.html" class="nav-link">Лор</a></li>
         <li><a href="magic.html" class="nav-link">Магия</a></li>
         <li><a href="gods.html" class="nav-link">Божества</a></li>
         <li><a href="equipment.html" class="nav-link">Снаряжение, предметы, владения</a></li>
+        <li><a href="actions.html" class="nav-link">Действия</a></li>
         <li><a href="sphere.html" class="nav-link superior">🔮</a></li>
 <!--        <li><a href="items.html" class="nav-link">Предметы</a></li>-->
     </ul>
