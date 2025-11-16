@@ -42,8 +42,8 @@ function renderTab(tabName, items) {
     items.forEach((a, i) => {
         const li = $(`
       <li>
-        <input type="text" value="${a}" data-index="${i}" class="editable-item">
-        <button class="delete-item">✕</button>
+            <textarea rows="4" cols="35" data-index="${i}" class="editable-item">${a}</textarea>
+        <button class="delete-item">✕ Удалить строку</button>
       </li>
     `);
         list.append(li);

@@ -40,7 +40,7 @@
 button{
     font-size: 1.2rem;
 }
-input.editable-item {
+textarea.editable-item {
     width: 80%;
     padding: 6px 10px;
     margin: 4px 6px 4px 0;
@@ -54,7 +54,7 @@ input.editable-item {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
-input.editable-item:focus {
+textarea.editable-item:focus {
     border-color: var(--highlight_border_color);
     background: var(--highlight_background_color);
     color: var(--text_bold_color);
