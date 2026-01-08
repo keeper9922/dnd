@@ -40,6 +40,9 @@
   --table_odd_row_background_color: rgba(42, 61, 77, 0.3);
   --table_even_row_background_color: rgba(64, 81, 100, 0.3);
   --table_border_color: #22214b; /*#6a748d;*/
+
+  --warning_color: rgb(199, 181, 74);
+  --error_color: rgb(192, 65, 65);
 }
 
 @font-face {
@@ -886,4 +889,32 @@ table:target{
   .popup-close {
     font-size: 2rem;
   }
+}
+
+.guild_short{
+  background-color: var(--panel_background);
+  border: 1px solid var(--highlight_border_color);
+  padding: 0.2rem;
+}
+
+.quest_rate {
+  background-color: var(--panel_background);
+  border: 1px solid var(--panel_border_color);
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  border-radius: 7px;
+}
+
+.quest_check {
+  background-color: var(--panel_background);
+  border: 1px solid var(--warning_color);
+  padding: 0.2rem;
+  border-radius: 7px;
+}
+
+.quest_fine {
+  background-color: var(--panel_background);
+  border: 1px solid var(--error_color);
+  padding: 0.2rem;
+  border-radius: 7px;
 }

@@ -78,31 +78,31 @@ textarea.editable-item:focus {
 #panel {
     display: flex;
     align-items: center;
-    gap: 15px;
     margin-bottom: 20px;
-    background: var(--panel_background);
-    border: 1px solid var(--panel_border_color);
-    border-radius: 10px;
-    padding: 10px 15px;
+    padding: 10px 0 10px 0;
+    background-color: var(--sub_nav_background_color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     font-size: 1.2rem;
-    margin-left: 10px;
-    margin-right: 10px;
+    /*margin-left: 10px;*/
+    /*margin-right: 10px;*/
     border-bottom: 0;
     overflow-x: auto;
 }
 
 #panel select,
-#panel button {
-    padding: 8px 12px;
-    border-radius: 10px;
-    border: 1px solid var(--container_border_color);
-    background: var(--button_background_color);
-    color: var(--text_color);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+#panel button,
+.panel_btn {
+    padding: 10px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: var(--nav_button_background_color);
+    color: var(--link_color);
     cursor: pointer;
     transition: background var(--button_background_hover_animation);
+    margin-left: 10px;
 }
 
 .spend{
@@ -110,8 +110,9 @@ textarea.editable-item:focus {
 }
 
 #panel button:hover,
-#panel select:hover {
-    background: var(--button_background_hover_color);
+#panel select:hover,
+.panel_btn:hover {
+    background-color: var(--nav_button_hover_background_color);
 }
 
 #tabs {
@@ -177,19 +178,19 @@ textarea.editable-item:focus {
     margin-bottom: 6px;
 }
 
-.tab-content button {
-    padding: 6px 12px;
-    border: 1px solid var(--container_border_color);
-    border-radius: 8px;
-    background: var(--button_background_color);
-    color: var(--text_color);
-    cursor: pointer;
-    transition: background var(--button_background_hover_animation);
-}
+/*.tab-content button {*/
+/*    padding: 6px 12px;*/
+/*    border: 1px solid var(--container_border_color);*/
+/*    border-radius: 8px;*/
+/*    background: var(--button_background_color);*/
+/*    color: var(--text_color);*/
+/*    cursor: pointer;*/
+/*    transition: background var(--button_background_hover_animation);*/
+/*}*/
 
-.tab-content button:hover {
-    background: var(--button_background_hover_color);
-}
+/*.tab-content button:hover {*/
+/*    background: var(--button_background_hover_color);*/
+/*}*/
 
 button.blocked {
     opacity: 0.4;

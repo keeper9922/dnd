@@ -14,6 +14,7 @@ function createNavbar() {
         <li><a href="gods.html" class="nav-link">Божества</a></li>
         <li><a href="equipment.html" class="nav-link">Снаряжение, предметы, владения</a></li>
         <li><a href="actions.html" class="nav-link">Действия</a></li>
+        <li><a href="guilds.html" class="nav-link">Гильдии</a></li>
         <li><a href="sphere.html" class="nav-link superior">🔮</a></li>
 <!--        <li><a href="items.html" class="nav-link">Предметы</a></li>-->
     </ul>
