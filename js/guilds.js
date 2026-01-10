@@ -39,6 +39,7 @@ loadData().then(({ guilds, quests }) => {
       <p><strong>Длительность:</strong> ${q.length}</p>
       <p><strong>Описание:</strong> ${q.description}</p>
       <p><strong>Проверки:</strong> <span class="quest_check">${q.checks}</span></p>
+      <p><strong>Групповые проверки:</strong><span class="quest_check">${q.group_checks}</span></p>
       <p><strong>Групповая награда:</strong> ${q.group_reward}</p>
       <p><strong>Награда:</strong> ${q.money_reward} золота <span class="quest_rate">+${q.bonus_reward_per_rate_percent}%</span>, ${q.xp_reward} опыта <span class="quest_rate">за ${q.reward_rate}</span>.</p>
       <p><strong>Предметы:</strong> ${q.items_reward}</p>
