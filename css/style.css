@@ -46,6 +46,9 @@
   --table_header_color: rgba(0,0,0,0.1);
   /*  cards*/
   --card_content_background_color: rgba(0,0,0,0.15);
+
+  --warning_color: rgb(199, 181, 74);
+  --error_color: rgb(192, 65, 65);
 }
 [data-theme="light"]{
   /*margin: 0;*/
@@ -1125,4 +1128,32 @@ button.blocked {
 .dimmed {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.guild_short{
+  background-color: var(--panel_background);
+  border: 1px solid var(--highlight_border_color);
+  padding: 0.2rem;
+}
+
+.quest_rate {
+  background-color: var(--panel_background);
+  border: 1px solid var(--panel_border_color);
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  border-radius: 7px;
+}
+
+.quest_check {
+  background-color: var(--panel_background);
+  border: 1px solid var(--warning_color);
+  padding: 0.2rem;
+  border-radius: 7px;
+}
+
+.quest_fine {
+  background-color: var(--panel_background);
+  border: 1px solid var(--error_color);
+  padding: 0.2rem;
+  border-radius: 7px;
 }

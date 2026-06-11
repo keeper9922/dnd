@@ -42,21 +42,21 @@ function renderTab(tabName, items) {
     items.forEach((a, i) => {
         const li = $(`
       <li>
-        <input type="text" value="${a}" data-index="${i}" class="editable-item">
-        <button class="delete-item">✕</button>
+            <textarea rows="4" cols="35" data-index="${i}" class="editable-item">${a}</textarea>
+        <button class="panel_btn">✕ Удалить строку</button>
       </li>
     `);
         list.append(li);
     });
     container.append(list);
 
-    const addBtn = $('<button>Добавить строку</button>');
+    const addBtn = $('<button class="panel_btn">Добавить строку</button>');
     addBtn.on('click', () => {
         items.push("Новое действие");
         updateCurrentTabData(tabName, items);
     });
 
-    const spendBtn = $('<button class="spend">Потратить действие</button>');
+    const spendBtn = $('<button class="spend panel_btn">Потратить действие</button>');
     spendBtn.on('click', () => blockTab(tabName, spendBtn));
 
     container.append(addBtn);
