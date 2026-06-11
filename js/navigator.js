@@ -13,7 +13,7 @@ function createNavbar() {
         <li><a href="magic.html" class="nav-link">Магия</a></li>
         <li><a href="gods.html" class="nav-link">Божества</a></li>
         <li><a href="equipment.html" class="nav-link">Снаряжение, предметы, владения</a></li>
-        <li><a href="actions.html" class="nav-link">Действия</a></li>
+        <li><a href="actions.html" class="nav-link">Действия⚔️</a></li>
         <li><a href="current_mechanics.html" class="nav-link superior">Текущий кампейн</a></li>
         <li><a href="sphere.html" class="nav-link superior">🔮</a></li>
 <!--        <li><a href="items.html" class="nav-link">Предметы</a></li>-->
@@ -63,9 +63,6 @@ document.addEventListener('DOMContentLoaded', createNavbar);
 jQuery(function ($) {
     $(".header-button").on("click", toggleMenu);
     const $root = $('html');
-
-    const savedTheme = localStorage.getItem('theme');
-
     if (savedTheme === 'light') {
         $root.attr('data-theme', 'light');
     } else if (!savedTheme) {
